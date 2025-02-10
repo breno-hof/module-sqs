@@ -29,15 +29,15 @@ variable "is_fifo_throughput_limit_per_message_group_id" {
 }
 
 variable "is_sqs_managed_sse_enabled" {
-	description = " (Optional) Boolean to enable server-side encryption (SSE) of message content with SQS-owned encryption keys. (default false)."
+	description = "(Optional) Boolean to enable server-side encryption (SSE) of message content with SQS-owned encryption keys. (default false)."
 	type		= bool
 	default		= false
 }
 
 variable "should_handle_deadletters" {
-	description = " (Optional) Should create deadletter queue and error queue. (default false)."
+	description = "(Optional) Should create deadletter queue and error queue. (default false)."
 	type		= bool
-	default		= true
+	default		= false
 }
 
 
